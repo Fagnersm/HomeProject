@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 /**
  * Classe Imovel representa a entidade Imovel.
- *
+ *m mm
  * @author Jefferson Araújo, jefferssonaraujo@gmail.com
  * @version 1.0
  * @since 28/08/2011
