@@ -63,6 +63,7 @@ public class Imovel implements Serializable {
 
 
     //getter and setter
+    
     public Integer getId() {
         return id;
     }
