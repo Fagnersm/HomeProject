@@ -14,7 +14,7 @@ import javax.ejb.EJB;
  * Copyright (C) 2011 SistComp Empresa Jr.
  */
 @ManagedBean(value = "imovelController")
-public class ImovelController {
+public class ImovelBean {
 
     @EJB
     ImovelDao imovelDao;
