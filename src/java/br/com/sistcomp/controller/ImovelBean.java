@@ -19,7 +19,7 @@ public class ImovelBean {
     @EJB
     ImovelDao imovelDao;
 
-    //TODO implementar a classe controller
+    //TODO implementar a classe controllers
 
 
 }
