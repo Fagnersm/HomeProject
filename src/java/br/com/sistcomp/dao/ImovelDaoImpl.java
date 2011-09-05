@@ -22,7 +22,7 @@ public class ImovelDaoImpl implements ImovelDao {
 
 
     @PersistenceContext(name="HomeProjectPU")
-    EntityManager entityManager;
+    private EntityManager entityManager;
 
     /**
      *
@@ -113,7 +113,7 @@ public class ImovelDaoImpl implements ImovelDao {
 
             return entityManager.createQuery("SELECT i FROM Imovel i").getResultList();
 
-        } catch (Exception e) {
+        } catch (NoResultException e) {
             //TODO Implementar as exceções
             return null;
         }        
