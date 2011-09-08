@@ -12,6 +12,7 @@ import javax.persistence.Table;
  * Classe UnidadeFederativa representa a entidade UnidadeFederativa.
  *
  * @author Jefferson Araújo, jefferssonaraujo@gmail.com
+ * @author Fagner Silva Martins, fagner.silva@sistcomp.com.br
  * @version 1.0
  * @since 28/08/2011
  *
@@ -28,6 +29,14 @@ public class UnidadeFederativa implements Serializable {
     private Integer id;
     private String nomeUnidadeFederativa;
 
+    //construtores
+    public UnidadeFederativa() {
+    }  
+    
+    public UnidadeFederativa(String nomeUnidadeFederativa) {
+        this.nomeUnidadeFederativa = nomeUnidadeFederativa;
+    }
+    
     // getter and setter
     public Integer getId() {
         return id;
@@ -36,6 +45,14 @@ public class UnidadeFederativa implements Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
+
+    public String getNomeUnidadeFederativa() {
+        return nomeUnidadeFederativa;
+    }
+
+    public void setNomeUnidadeFederativa(String nomeUnidadeFederativa) {
+        this.nomeUnidadeFederativa = nomeUnidadeFederativa;
+    }    
 
     @Override
     public int hashCode() {
@@ -59,6 +76,6 @@ public class UnidadeFederativa implements Serializable {
 
     @Override
     public String toString() {
-        return "br.com.sistcomp.model.UnidadeFederativa[ id=" + id + " ]";
+        return "br.com.sistcomp.model.UnidadeFederativa[ id=" + id + "nomeUnidadeFederativa="+ nomeUnidadeFederativa+"]";
     }
 }
